@@ -1,0 +1,208 @@
+{
+  "database_version": "1.0",
+  "last_updated": "2026-03-10T18:07:00-04:00",
+  "total_studies": 3,
+  "successful_extractions": 2,
+  "failed_extractions": 1,
+  "studies": [
+    {
+      "id": "asthma_self_management_peru_2026",
+      "filename": "asthma_self_management_peru_intervention.pdf",
+      "status": "extracted",
+      "study_title": "Effectiveness and implementation of a multi-faceted intervention to facilitate adoption of asthma self-management practices in Peruvian children and adolescents: a hybrid type 2 individually randomized controlled trial",
+      "effect_size": {
+        "metric_type": "Mean difference (MD)",
+        "primary_outcome": {
+          "outcome": "Asthma Control Test (ACT) score at 6 months",
+          "intervention_change": {
+            "mean": 4.49,
+            "unit": "points",
+            "baseline_mean": 19.3,
+            "baseline_sd": 3.8,
+            "month_6_mean": 23.8,
+            "month_6_sd": 2.89
+          },
+          "control_change": {
+            "mean": 4.6,
+            "unit": "points",
+            "baseline_mean": 18.9,
+            "baseline_sd": 4.49,
+            "month_6_mean": 23.5,
+            "month_6_sd": 2.86
+          },
+          "between_group_difference": "No statistically significant difference between intervention and control arms at 6 months",
+          "note": "Both arms showed improvement; null result between arms"
+        }
+      },
+      "confidence_intervals": {
+        "intervention_act_change_95CI": [3.05, 5.92],
+        "control_act_change_95CI": [3.22, 5.99],
+        "intervention_baseline_to_month1_95CI": [1.67, 3.93],
+        "control_baseline_to_month1_95CI": [1.36, 3.86]
+      },
+      "sample_size": {
+        "total_enrolled": 110,
+        "total_completed": 101,
+        "intervention_arm": {
+          "enrolled": 54,
+          "completed": 49,
+          "lost_to_followup": 2
+        },
+        "control_arm": {
+          "enrolled": 56,
+          "completed": 52,
+          "lost_to_followup": 3
+        }
+      },
+      "intervention_type": {
+        "description": "Multi-faceted asthma self-management intervention package",
+        "components": [
+          "Designated nurse manager providing monthly home visits and phone/text support",
+          "Contextually adapted personalized asthma action plan",
+          "Individualized patient-provider communication tool (\"Asma Card\")",
+          "Education program based on NHLBI \"Respirar es vida / A Breath of Life\" curriculum",
+          "Interactive learning materials (flipcharts, videos, discussion, monitoring and feedback)",
+          "Super Niño booklet (comic book format educational material)",
+          "Free inhaled corticosteroids delivered to home"
+        ],
+        "control_condition": "One-time basic asthma education visit + free inhaled corticosteroids"
+      },
+      "primary_outcome_measure": {
+        "name": "Childhood/Adolescent Asthma Control Test (cACT/aACT)",
+        "description": "Asthma control score at 6 months of follow-up",
+        "age_specific_instruments": {
+          "ages_5_11": "Childhood Asthma Control Test (cACT)",
+          "ages_12_17": "Adolescent Asthma Control Test (aACT)"
+        },
+        "scoring": "Higher score indicates better asthma control",
+        "minimal_clinically_important_difference": "3 points"
+      },
+      "study_design": {
+        "type": "Hybrid Type 2 Effectiveness-Implementation Individually Randomized Controlled Trial",
+        "randomization": "1:1 allocation using block randomization with block sizes of 4, 6, and 8",
+        "follow_up_duration": "6 months with monthly assessments",
+        "setting": "Pediatric pulmonary clinic at Cayetano Heredia Hospital, Lima, Peru",
+        "target_population": "Children aged 5-17 years with physician-diagnosed asthma in urban Lima, Peru",
+        "framework": "RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance)"
+      },
+      "key_secondary_outcomes": [
+        {"name": "Medication adherence (ARMS-7)", "intervention_change": -2.06, "control_change": -1.94, "note": "Lower score = better adherence"},
+        {"name": "Pediatric Asthma Quality of Life (PAQLQ-Mini)", "intervention_change": 1.18, "control_change": 0.85, "note": "Higher score = better QOL"},
+        {"name": "Caregiver Quality of Life (PACQLQ)", "intervention_change": 1.49, "control_change": 1.16, "note": "Higher score = better QOL"},
+        {"name": "Caregiver depressive symptoms (PHQ-9)", "intervention_change": -3.37, "control_change": -3.19, "note": "Lower score = fewer symptoms"}
+      ],
+      "publication_info": {
+        "journal": "Frontiers in Public Health",
+        "publication_date": "13 January 2026",
+        "doi": "10.3389/fpubh.2025.1710746",
+        "clinical_trial_registration": "ClinicalTrials.gov NCT03986177"
+      },
+      "extraction_timestamp": "2026-03-10T18:07:00-04:00"
+    },
+    {
+      "id": "diabetes_self_management_umbrella_review",
+      "filename": "diabetes_self_management_education_umbrella_review.pdf",
+      "status": "failed",
+      "error": "File corrupted - contains only 16 bytes with error text 'error code: 1020'",
+      "error_code": "1020",
+      "note": "Cloudflare/CDN access restriction during download. File needs to be re-downloaded from original source.",
+      "extraction_timestamp": "2026-03-10T18:07:00-04:00"
+    },
+    {
+      "id": "diabetic_retinopathy_weakly_supervised_2024",
+      "filename": "diabetic_retinopathy_screening_weakly_supervised.pdf",
+      "status": "extracted",
+      "study_title": "Weakly Supervised Patch Annotation for Improved Screening of Diabetic Retinopathy",
+      "effect_size": {
+        "metric_type": "AUPRC (Area Under the Precision-Recall Curve)",
+        "value": 0.545,
+        "description": "Performance gain in AUPRC on DDR(-) dataset with Inception-NetV3",
+        "additional_metrics": {
+          "accuracy": {
+            "Messidor*": 0.9599,
+            "IDRiD(-)": 0.9739,
+            "e-ophtha(-)": 0.9829,
+            "DDR(-)": 0.9886
+          },
+          "balanced_accuracy": {
+            "Messidor*": 0.9062,
+            "IDRiD(-)": 0.8637,
+            "e-ophtha(-)": 0.7729,
+            "DDR(-)": 0.9209
+          },
+          "F1_score_Healthy": {
+            "Messidor*": 0.9758,
+            "IDRiD(-)": 0.9859,
+            "e-ophtha(-)": 0.9912,
+            "DDR(-)": 0.9939
+          },
+          "F1_score_Unhealthy": {
+            "Messidor*": 0.8844,
+            "IDRiD(-)": 0.8205,
+            "e-ophtha(-)": 0.6931,
+            "DDR(-)": 0.9051
+          }
+        }
+      },
+      "confidence_interval": "Not explicitly reported in the extracted text",
+      "sample_size": {
+        "total_images": 1200,
+        "datasets": {
+          "Messidor*": {
+            "total_images": 1200,
+            "No_DR": 546,
+            "DR": 654,
+            "labeled_patches_Healthy": 41386,
+            "labeled_patches_Unhealthy": 9387,
+            "unlabeled_patches": 39598
+          },
+          "IDRiD(-)": {
+            "total_images": 249,
+            "No_DR": 168,
+            "DR": 81,
+            "labeled_patches_Healthy": 87987,
+            "labeled_patches_Unhealthy": 9292,
+            "unlabeled_patches": 33490
+          },
+          "e-ophtha(-)": {
+            "total_images": 157,
+            "No_DR": 99,
+            "DR": 58,
+            "labeled_patches_Healthy": 10522,
+            "labeled_patches_Unhealthy": 511,
+            "unlabeled_patches": 8933
+          },
+          "DDR(-)": {
+            "total_images": 3263,
+            "No_DR": 2506,
+            "DR": 757,
+            "labeled_patches_Healthy": 223542,
+            "labeled_patches_Unhealthy": 18468,
+            "unlabeled_patches": 117448
+          }
+        }
+      },
+      "intervention_type": {
+        "description": "SAFE (Similarity-based Annotation via Feature-space Ensemble) - a two-stage framework that unifies weak supervision, contrastive learning, and patch-wise embedding inference to systematically expand sparse annotations",
+        "components": [
+          "Stage 1: Dual-arm Patch Embedding Network (PEN) learns semantically structured, class-discriminative embeddings",
+          "Stage 2: Ensemble of independent embedding spaces extrapolates labels to unannotated regions based on spatial and semantic proximity"
+        ],
+        "model_architecture": "Inception-NetV3, ResNet18"
+      },
+      "primary_outcome_measure": {
+        "name": "Patch-level annotation accuracy for diabetic retinopathy screening",
+        "metrics": ["Accuracy (Acc)", "Balanced Accuracy (BAcc)", "Precision (PR)", "Recall (RE)", "F1-score", "AUPRC", "Decided Rate (D_rate)", "Misclassification Rate (MR)"],
+        "downstream_task": "DR classification performance improvement"
+      },
+      "study_design": {
+        "type": "Validation study / Diagnostic accuracy study",
+        "description": "Weakly supervised learning framework evaluation with comparative analysis against baseline approaches",
+        "baselines_compared": ["ResNet18", "LCL", "PEN+KNN", "PLT", "DeepCluster"],
+        "datasets": ["Messidor", "IDRiD", "e-ophtha", "DDR"],
+        "validation": "80-20 stratified split with 4-fold cross-validation"
+      },
+      "extraction_timestamp": "2026-03-10T18:07:00-04:00"
+    }
+  ]
+}
